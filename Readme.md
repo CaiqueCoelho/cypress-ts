@@ -51,11 +51,11 @@ of the job execution in the Summary of the job action in the Artifacts section l
 
 ## Tests report from the Cypress execution
 
-You can access the following link to see the report of the test execution https://caiquecoelho.github.io/cypress-test/
+I'm using Github Pages to store the lastest test execution so you can access the following link to see the report of the test execution https://caiquecoelho.github.io/cypress-ts/
 Or you can download the report from the Github Artifact of the last execution https://github.com/CaiqueCoelho/cypress-ts/suites/13641579078/artifacts/752919985
 
 ## Tests videos from the Cypress execution
 
-[Watch the video from Signing and Signup flow](https://github.com/CaiqueCoelho/cypress-test/raw/main/cypress/TestReport/videos/Signin%26Signup.cy.js.mp4)
+[API test Public Apis - https://api.publicapis.org/](https://github.com/CaiqueCoelho/cypress-ts/raw/main/docs/videos/api.test.cy.ts.mp4)
 
-[Watch the video from Article flow](https://github.com/CaiqueCoelho/cypress-test/raw/main/cypress/TestReport/videos/ArticleFlow.cy.js.mp4)
+[Front test Sauce Demo - https://www.saucedemo.com/](https://github.com/CaiqueCoelho/cypress-ts/raw/main/docs/videos/front.test.cy.ts.mp4)
