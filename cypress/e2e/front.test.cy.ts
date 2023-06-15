@@ -1,7 +1,6 @@
 import "cypress-map";
-import { reverse } from "cypress/types/lodash";
 
-describe("API testing", () => {
+describe("Front testing in https://www.saucedemo.com", () => {
   it("GET Entries and filter by the Category: Authentication & Authorization", () => {
     cy.visit("/");
     cy.get('[data-test="username"]').type("standard_user");

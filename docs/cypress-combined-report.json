@@ -12,13 +12,13 @@
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2023-06-15T20:48:34.206Z",
-    "end": "2023-06-15T20:48:39.685Z",
-    "duration": 5479
+    "start": "2023-06-15T20:56:40.880Z",
+    "end": "2023-06-15T20:56:52.634Z",
+    "duration": 11754
   },
   "results": [
     {
-      "uuid": "45b1668f-8a53-4743-8b3f-c5e47ef41632",
+      "uuid": "b00229d6-fe98-4f6d-a9e0-5e669105abae",
       "title": "",
       "fullFile": "cypress/e2e/api.test.cy.ts",
       "file": "cypress/e2e/api.test.cy.ts",
@@ -27,8 +27,8 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c5becd55-05fb-4471-8322-688382d95430",
-          "title": "API testing",
+          "uuid": "709152d5-e3c1-4005-8909-48359faa1394",
+          "title": "API testing in https://api.publicapis.org/entries",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,31 +36,31 @@
           "tests": [
             {
               "title": "GET Entries and filter by the Category: Authentication & Authorization",
-              "fullTitle": "API testing GET Entries and filter by the Category: Authentication & Authorization",
+              "fullTitle": "API testing in https://api.publicapis.org/entries GET Entries and filter by the Category: Authentication & Authorization",
               "timedOut": null,
-              "duration": 1656,
+              "duration": 1819,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
-              "context": null,
+              "context": "\"videos/api.test.cy.ts.mp4\"",
               "code": "var entriesAuthCategory = [];\ncy.api({ url: \"https://api.publicapis.org/entries\" }, \"GET Entries and filter by the Category: Authentication & Authorization\").then(function (responseEntries) {\n    expect(responseEntries.status).to.eq(200);\n    assert.isArray(responseEntries.body.entries, \"Todos Response is an array\");\n    responseEntries.body.entries.forEach(function (entry) {\n        if (entry.Category === \"Authentication & Authorization\") {\n            entriesAuthCategory.push(entry);\n        }\n    });\n    expect(entriesAuthCategory.length).to.be.equals(7);\n    cy.log(entriesAuthCategory.length);\n    entriesAuthCategory.forEach(function (entry) {\n        cy.log(JSON.stringify(entry));\n        cy.wrap(entry).should((0, cy_spok_1.default)({\n            API: cy_spok_1.default.string,\n            Description: cy_spok_1.default.string,\n            Auth: cy_spok_1.default.string,\n            HTTPS: cy_spok_1.default.type(\"boolean\"),\n            Cors: cy_spok_1.default.string,\n            Link: cy_spok_1.default.string,\n            Category: \"Authentication & Authorization\",\n        }));\n    });\n});",
               "err": {},
-              "uuid": "b0bc91ba-1c7d-44a3-845b-1f31e9c859ea",
-              "parentUUID": "c5becd55-05fb-4471-8322-688382d95430",
+              "uuid": "060fbd2a-0340-45b0-8704-39d880bbe00a",
+              "parentUUID": "709152d5-e3c1-4005-8909-48359faa1394",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b0bc91ba-1c7d-44a3-845b-1f31e9c859ea"
+            "060fbd2a-0340-45b0-8704-39d880bbe00a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1656,
+          "duration": 1819,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "9b7bc730-7215-40be-8a6c-67de3dbeb57b",
+      "uuid": "1607ea88-0c6b-4f07-8366-5172c3ab5467",
       "title": "",
       "fullFile": "cypress/e2e/front.test.cy.ts",
       "file": "cypress/e2e/front.test.cy.ts",
@@ -85,8 +85,8 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "10f3abe6-96ee-48f9-b201-be504176ba0a",
-          "title": "API testing",
+          "uuid": "32fc3bfd-b5e5-492f-8402-386d8b028991",
+          "title": "Front testing in https://www.saucedemo.com",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -94,31 +94,31 @@
           "tests": [
             {
               "title": "GET Entries and filter by the Category: Authentication & Authorization",
-              "fullTitle": "API testing GET Entries and filter by the Category: Authentication & Authorization",
+              "fullTitle": "Front testing in https://www.saucedemo.com GET Entries and filter by the Category: Authentication & Authorization",
               "timedOut": null,
-              "duration": 1383,
+              "duration": 1556,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
-              "context": null,
+              "context": "\"videos/front.test.cy.ts.mp4\"",
               "code": "cy.visit(\"/\");\ncy.get('[data-test=\"username\"]').type(\"standard_user\");\ncy.get('[data-test=\"password\"]').type(\"secret_sauce\");\ncy.get('[data-test=\"login-button\"]').click();\ncy.get('[data-test=\"product_sort_container\"] option:selected').should(\"have.text\", \"Name (A to Z)\");\ncy.get('[data-test=\"product_sort_container\"]').select(\"Name (Z to A)\");\ncy.get('[data-test=\"product_sort_container\"] option:selected').should(\"have.text\", \"Name (Z to A)\");\ncy.get(\".inventory_item_name\")\n    .map(\"innerText\")\n    .then(function (productsNames) {\n    var sortProductsNames = __spreadArray([], __read(productsNames), false).sort().reverse();\n    cy.log(productsNames[0]);\n    cy.log(sortProductsNames[0]);\n    expect(productsNames).to.be.deep.equal(sortProductsNames);\n});",
               "err": {},
-              "uuid": "2e5add0f-c8fa-4db1-9fd9-76e028964348",
-              "parentUUID": "10f3abe6-96ee-48f9-b201-be504176ba0a",
+              "uuid": "445ed327-3f51-4c9b-9474-84f4f0db92b3",
+              "parentUUID": "32fc3bfd-b5e5-492f-8402-386d8b028991",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2e5add0f-c8fa-4db1-9fd9-76e028964348"
+            "445ed327-3f51-4c9b-9474-84f4f0db92b3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1383,
+          "duration": 1556,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

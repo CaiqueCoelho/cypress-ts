@@ -26,7 +26,7 @@ And I used [cy-api](https://github.com/bahmutov/cy-api) to haver a better visual
 3. Change the sorting to Name ( Z -> A).
 4. Verify that the items are sorted correctly.
 
-You can find all tests in the path [/cypress/e2e](https://github.com/CaiqueCoelho/cypress-test/tree/main/cypress/e2e)
+You can find all tests in the path [/cypress/e2e](https://github.com/CaiqueCoelho/cypress-ts/tree/main/cypress/e2e)
 
 ## How to run the Cypress tests locally
 
@@ -37,22 +37,22 @@ You can find all tests in the path [/cypress/e2e](https://github.com/CaiqueCoelh
 
 With the tests automated in the GHA pipeline, we can execute our tests every time a pull request is opened to our project to assure everything still works like expected and block the Pull Request from being merged if any tests failed
 
-We can also execute the tests manually by the workflow dispatch in the following link by clicking in the [following link](https://github.com/CaiqueCoelho/cypress-test/actions/workflows/e2e.yml) on Run Workflow in the gray box and on the Run Workflow green button
+We can also execute the tests manually by the workflow dispatch in the following link by clicking in the [following link](https://github.com/CaiqueCoelho/cypress-ts/actions/workflows/e2e.yml) on Run Workflow in the gray box and on the Run Workflow green button
 
-https://github.com/CaiqueCoelho/cypress-test/actions/workflows/e2e.yml
+https://github.com/CaiqueCoelho/cypress-ts/actions/workflows/e2e.yml
 
 When the job of tests finish we can see the reports of our executed tests hosted in the Github Artifacts you can find a HTML report, with screenshots when the test failed, and the video of the execution of the tests.
 
 ## How to run the Cypress tests in GHA
 
-Go to https://github.com/CaiqueCoelho/cypress-test/actions/workflows/e2e.yml and click in the gray button called Run Workflow and in the green button
+Go to https://github.com/CaiqueCoelho/cypress-ts/actions/workflows/e2e.ymland click in the gray button called Run Workflow and in the green button
 called Run Workflow, the job will start and you will be able to see all the steps running include the test and you can download the report in the end
-of the job execution in the Summary of the job action in the Artifacts section like the following example https://github.com/CaiqueCoelho/cypress-test/actions/runs/5222923206
+of the job execution in the Summary of the job action in the Artifacts section like the following example https://github.com/CaiqueCoelho/cypress-ts/actions/runs/5283495551
 
 ## Tests report from the Cypress execution
 
 You can access the following link to see the report of the test execution https://caiquecoelho.github.io/cypress-test/
-Or you can download the report from the Github Artifact of the last execution https://github.com/CaiqueCoelho/cypress-test/suites/13493899230/artifacts/741135272
+Or you can download the report from the Github Artifact of the last execution https://github.com/CaiqueCoelho/cypress-ts/suites/13641469309/artifacts/752909966
 
 ## Tests videos from the Cypress execution
 
