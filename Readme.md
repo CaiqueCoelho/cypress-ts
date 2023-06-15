@@ -47,12 +47,12 @@ When the job of tests finish we can see the reports of our executed tests hosted
 
 Go to https://github.com/CaiqueCoelho/cypress-ts/actions/workflows/e2e.ymland click in the gray button called Run Workflow and in the green button
 called Run Workflow, the job will start and you will be able to see all the steps running include the test and you can download the report in the end
-of the job execution in the Summary of the job action in the Artifacts section like the following example https://github.com/CaiqueCoelho/cypress-ts/actions/runs/5283495551
+of the job execution in the Summary of the job action in the Artifacts section like the following example https://github.com/CaiqueCoelho/cypress-ts/actions/runs/5283531584
 
 ## Tests report from the Cypress execution
 
 You can access the following link to see the report of the test execution https://caiquecoelho.github.io/cypress-test/
-Or you can download the report from the Github Artifact of the last execution https://github.com/CaiqueCoelho/cypress-ts/suites/13641469309/artifacts/752909966
+Or you can download the report from the Github Artifact of the last execution https://github.com/CaiqueCoelho/cypress-ts/suites/13641579078/artifacts/752919985
 
 ## Tests videos from the Cypress execution
 
