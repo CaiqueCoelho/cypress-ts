@@ -1,6 +1,6 @@
 import spok from "cy-spok";
 
-describe("API testing", () => {
+describe("API testing in https://api.publicapis.org/entries", () => {
   it("GET Entries and filter by the Category: Authentication & Authorization", () => {
     let entriesAuthCategory = [];
     cy.api(
