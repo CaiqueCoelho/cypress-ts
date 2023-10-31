@@ -1,4 +1,5 @@
 import "./commands";
+import "./commands/utils";
 import "@bahmutov/cy-api";
 
 import addContext from "mochawesome/addContext";
@@ -8,9 +9,14 @@ after(() => {
   cy.wait(3000);
 });
 
-Cypress.on("uncaught:exception", (err, runnable) => {
-  return false;
-});
+Cypress.on(
+  /* eslint-disable no-unused-vars */
+  "uncaught:exception",
+  (
+    _err,
+    _runnable // eslint-disable-line no-unused-vars
+  ) => false
+);
 
 Cypress.on("test:after:run", (test, runnable) => {
   if (test.state === "failed") {
