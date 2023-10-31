@@ -28,4 +28,13 @@ describe("Front testing in https://www.saucedemo.com", () => {
         expect(productsNames).to.be.deep.equal(sortProductsNames);
       });
   });
+
+  it.only("Put products in cart using testing libary examples", () => {
+    cy.visit("/");
+    cy.getByPlaceholder("Username").type("standard_user");
+    cy.getByPlaceholder("Password").type("secret_sauce");
+    cy.getByAllText("Login").click();
+
+    cy.getByAllText("Add to cart").first().click();
+  });
 });

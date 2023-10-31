@@ -3,7 +3,7 @@
     "esModuleInterop": true,
     "target": "es5",
     "lib": ["es5", "dom"],
-    "types": ["cypress", "node", "@bahmutov/cy-api"]
+    "types": ["cypress", "node", "@bahmutov/cy-api", "@testing-library/cypress"]
   },
   "include": ["**/*.ts", "cypress/e2e/api.test.cy.ts"]
 }
